@@ -465,7 +465,7 @@ var tess = window.tess || {};
         gl.bindTexture( gl.TEXTURE_2D, texture );
         gl.texParameteri( gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST );
         gl.texParameteri( gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST );
-        gl.texImage2D( gl.TEXTURE_2D, 0, gl.RGB, self.size, self.size, 0, gl.RGB, type, null );
+        gl.texImage2D( gl.TEXTURE_2D, 0, gl.RGBA, self.size, self.size, 0, gl.RGBA, type, null );
         gl.bindTexture( gl.TEXTURE_2D, null );
         return texture;
       }
